@@ -1,0 +1,375 @@
+@import url(https://db.onlinewebfonts.com/c/99501fdab737541e9315ceaf9229370f?family=Monument+Extended+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --fancy-font-1: "Monument Extended Regular", sans-serif;
+    --fancy-font-2: Poppins, sans-serif; 
+    --black: #0D0D0D;
+    --white: #fff;
+    --purple: #5D3FD3; 
+}
+
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fancy-font-2);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    height: 80px; 
+    padding: 0 2rem;  
+    border-bottom: 1px solid var(--white);
+    background-color: var(--black);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    margin: 0 2rem; 
+    height: 30px; 
+}
+
+.nav-links {
+    list-style: none;
+    margin-left: 3rem; 
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.nav-links li a {
+    color: var(--white); 
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 0.1s ease-in-out; 
+}
+
+.nav-links li a:hover {
+    font-style: italic;
+    color: var(--purple);
+}
+
+.soc-links {
+    list-style: none;
+    margin-left: auto; 
+}
+
+.soc-links li {
+    display: inline-block;
+}
+
+.soc-links li a img {
+    height: 30px;
+    width: 30px;
+    margin: 0 8px; 
+}
+
+.hero {
+    background-image: url('./background.png');
+    height: 88vh; 
+    background-size: cover;
+    filter: brightness(50%); 
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.gallery {
+    height: 80vh;
+    padding: 0 2rem; 
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.category {
+    width: 300px;
+    position: relative; 
+    margin: 0 10px; 
+    text-decoration: none;
+}
+
+.category img {
+    width: 100%; 
+    filter: grayscale();
+}
+
+.category .img-overlay {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%; 
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--white);
+    transition: 0.2s ease-in-out; 
+    opacity: 0;
+}
+
+.img-overlay > * {
+    transform: translateY(20px);
+    transition: 0.2s ease-in-out; 
+
+}
+
+.img-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+.img-overlay-blur {
+    backdrop-filter: blur(5px);
+}
+
+.img-overlay p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.about {
+    height: 100vh;
+    padding: 0 2rem; 
+}
+
+.about-container {
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container img {
+    width: 250px; 
+    filter: grayscale();
+    margin: 0 5rem; 
+}
+
+.about-text {
+    width: 30%; 
+}
+
+.about-container .about-text h2 {
+    font-size: 5rem;
+    font-family: var(--fancy-font-1);
+    font-weight: lighter;
+}
+
+.about-container .about-text p {
+    font-size: 1.2rem;
+}
+
+.about-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:var(--white);
+    border: 1px solid var(--black); 
+    width: 150px; 
+    height: 40px; 
+    margin-top: 3rem; 
+    background-color: var(--purple);
+    transition: 0.3s ease-in-out;
+}
+
+.about-btn:hover {
+    box-shadow: -8px 10px 0px var(--black);
+    transform: translate(10px, -15px);
+} 
+
+.testimonies {
+    height: 100vh; 
+    background-color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.review-quote {
+    position: absolute;
+    top: -45px;
+    right: 32%;  
+    height: 80px; 
+}
+
+.review-card {
+    background-color: var(--white);
+    width:  230px;
+    height: 350px;
+    margin: 0 1rem; 
+    position: relative; 
+    border-radius: 5px;
+}
+
+.review-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-body .review-img-container {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
+    margin-top: 2rem; 
+}
+
+.review-body img {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%;
+    border: 3px solid var(--purple); 
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 2rem; 
+    padding: 10px; 
+    text-align: center;
+}
+
+.review-text h2 {
+    font-size: 1.3rem;
+    font-family: var(--fancy-font-1);
+    font-weight: lighter;   
+}
+
+.review-text p {
+    font-size: 1.1rem;
+    margin-top: 2rem; 
+}
+
+.contact {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.contact-text {
+    text-align: right;
+}
+
+.contact-text p{
+    font-family: var(--fancy-font-1);
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.contact-form {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10rem; 
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    font-weight: lighter;
+    margin-top: 1rem; 
+}
+
+.contact-form input {
+    width: 50%; 
+    height: 30px;
+    border: none; 
+    border-bottom: 1px solid var(--black);  
+    outline: none; 
+    font-size: 0.8rem;
+    font-family: var(--fancy-font-2);
+    font-weight: lighter;
+}
+
+.contact-form textarea {
+    width: 50%;
+    resize: none; 
+    margin-top: 1rem; 
+    outline: none; 
+    border: 1px solid var(--black); 
+    padding: 5px; 
+    font-size: 0.8rem;
+    font-family: var(--fancy-font-2);
+    font-weight: lighter;
+}
+
+.contact-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:var(--white);
+    border: 1px solid var(--black); 
+    width: 150px; 
+    height: 40px; 
+    margin-top: 2rem; 
+    background-color: var(--purple);
+    transition: 0.3s ease-in-out;
+    font-family: var(--fancy-font-2);
+}
+
+.contact-form button:hover {
+    box-shadow: -8px 10px 0px var(--black);
+    transform: translate(10px, -15px);
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white); 
+    font-weight: lighter;
+}
+
+footer article {
+    height: 15vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article p, span, ul {
+    margin: 0 10px; 
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline-block;
+}
+
+.footer-links li a{
+    color: var(--white);
+}
+
+
+
+
+
+

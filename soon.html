@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soon</title>
+    <style>
+        @import url(https://db.onlinewebfonts.com/c/99501fdab737541e9315ceaf9229370f?family=Monument+Extended+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --fancy-font-1: "Monument Extended Regular", sans-serif;
+            --fancy-font-2: Poppins, sans-serif; 
+            --black: #0D0D0D;
+            --white: #fff;
+        }
+
+        * {
+            padding: 0; 
+            margin: 0; 
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: var(--black); 
+            font-family: var(--fancy-font-2); 
+            display: grid;
+            place-items: center;
+        }
+
+        .container {
+            width: 80vw; 
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .container img {
+            height: 100px;
+        }
+
+        .container .empty {
+            color: var(--white); 
+            font-size: 1.5rem;
+            margin: 20px 0; 
+            font-weight: lighter;
+            cursor: pointer;
+        }
+
+        .blessings {
+            color: var(--white); 
+            font-weight: lighter;
+            margin-top: 3rem;
+            cursor: pointer;
+        }
+
+        a {
+            position: absolute; 
+            bottom: 0; 
+            font-weight: lighter;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./icons/cat_2.png" alt="cat">
+        <p class="empty">So Empty . . . .</p>
+        <p class="blessings">click here to receive blessings</p>
+        <a href="index.html#gallery">Go back</a>
+    </div>
+
+    <script>
+        let btn = document.querySelector('.blessings'); 
+
+        btn.addEventListener('click', () => {
+            alert('You have been blessed by the God of Cats')
+        })
+    </script>
+</body>
+</html>

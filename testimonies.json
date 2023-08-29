@@ -1,0 +1,22 @@
+[
+    {"name": "Leo Jay Galon", 
+     "image": "./testimonies/eshot.jpg", 
+     "comment": "Choi Kaayo Bai"
+    },
+    {"name": "Julius Delola", 
+     "image": "./testimonies/julius.jpg", 
+     "comment": "Mia uyyyyy"
+    },
+    {"name": "Jay Lord Alvarado", 
+     "image": "./testimonies/lordj.jpg", 
+     "comment": "I labet"
+    },
+    {"name": "Morellia Macapagal", 
+     "image": "./testimonies/morels.jpg", 
+     "comment": "Sugoiiiii"
+    },
+    {"name": "Walter Cute", 
+     "image": "./testimonies/walter.jpg", 
+     "comment": "*Like*"
+    }
+]
